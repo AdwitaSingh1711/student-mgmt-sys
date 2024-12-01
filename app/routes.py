@@ -135,4 +135,5 @@ async def delete_student(item_id: str):
         raise HTTPException(status_code=404, detail="Item not found")
     
     # Return a success response
-    return {"status_code": 200, "message": "Item deleted successfully!"}
+    # return {"status_code": 200, "message": "Item deleted successfully!"}
+    return {}

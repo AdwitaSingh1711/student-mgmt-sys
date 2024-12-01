@@ -6,7 +6,7 @@ A RESTful API for managing students with FastAPI and MongoDB Atlas.
 
 
 ## Deployment
--Deployed as an API on Koyeb: frantic-frankie-adz-devs-d40bcdb4.koyeb.app/
+- Deployed as an API on Koyeb: frantic-frankie-adz-devs-d40bcdb4.koyeb.app/
 
 ## Features
 
