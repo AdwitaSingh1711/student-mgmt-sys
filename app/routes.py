@@ -72,7 +72,7 @@ async def get_student(item_id: str):
     if not student:
         raise HTTPException(status_code=404, detail="Student not found")
     
-    # Manually convert ObjectId to string
+    # Convert ObjectId to string
     student["_id"] = str(student["_id"])
     
     # Ensure that the response is JSON serializable
@@ -129,7 +129,6 @@ async def delete_student(item_id: str):
     except Exception:
         raise HTTPException(status_code=400, detail="Invalid item_id format")
     
-    # Perform the delete operation in MongoDB
     result = await collection.delete_one({"_id": object_id})
 
     if result.deleted_count == 0:

@@ -7,7 +7,7 @@ class Address(BaseModel):
 
 class Student(BaseModel):
     name: str
-    age: float
+    age: int
     address: Address
 
     class Config:
